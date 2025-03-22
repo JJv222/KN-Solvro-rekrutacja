@@ -14,3 +14,8 @@ router.get('/', async () => {
     hello: 'world',
   }
 })
+
+router.resource('/skladniki', '#controllers/skladnikis_controller').apiOnly()
+router.resource('/koktajle', '#controllers/koktajles_controller').apiOnly()
+router.resource('/koktajl_skladniki', '#controllers/koktajl_skladnikis_controller').apiOnly()
+router.resource('/jednostki', '#controllers/jednostkis_controller').apiOnly()
